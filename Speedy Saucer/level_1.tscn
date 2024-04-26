@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://de13alse1cwv7"]
+
+[ext_resource type="Texture2D" uid="uid://cpeabw5fbjnbr" path="res://Art/purple.png" id="1_di1mv"]
+[ext_resource type="PackedScene" uid="uid://8g1b58kojr8q" path="res://player.tscn" id="2_1ts2i"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 647.0
+texture = ExtResource("1_di1mv")
+stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_1ts2i")]
+position = Vector2(383, 205)
+
+[node name="Player2" parent="." instance=ExtResource("2_1ts2i")]
+position = Vector2(729, 205)
